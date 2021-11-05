@@ -40,6 +40,9 @@ html {
   border-width: 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   font-weight: bold;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
 }
 
 .btn2 {
@@ -95,6 +98,78 @@ html {
 
 .btn:hover {
   color: #fff;
+}
+
+.home .container-all{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 600ms;
+}
+
+.home .container-all:target{
+  background: rgba(0, 0, 0, 0.8);
+  visibility: visible;
+  opacity: 1;
+}
+
+.home .container-all:target .popup{
+  top: 50%;
+  left: 50%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  visibility: visible;
+}
+
+.home .container-all .popup{
+  width: 100%;
+  max-width: 100vh;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  visibility: hidden;
+  top: -80%;
+  left: -80%;
+  transform: rotate(90deg) translate(-150%, 230%);
+  transition: all 600ms;
+}
+
+.home .container-all .popup .img{
+  width: 40%;
+  background-image: url(images/Rectangle.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.home .container-all .popup .container-text{
+  width: 60%;
+  padding: 50px;
+  overflow-y: auto;
+  background: white;
+}
+
+.home .container-all .popup .container-text h1{
+  font-size: 5rem;
+}
+
+.home .container-all .popup .container-text p{
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+.home .container-all .popup .btn-close-popup{
+  width: 5%;
+  height: 8%;
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+  padding: 20px;
+  background: black;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 99%;
+  line-height: 1rem;
 }
 
 .heading {
@@ -168,6 +243,14 @@ header.header-active .navbar a {
   color: #333;
 }
 
+.btn-open-popup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 .home {
   min-height: 100vh;
   background: #1e1e1e;
@@ -191,7 +274,7 @@ header.header-active .navbar a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-inline: 32rem;
+  padding-inline: 16rem;
   padding-top: 8rem;
   /* background: #1e1e1e; */
 }
@@ -257,7 +340,7 @@ header.header-active .navbar a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding-inline: 32rem;
+  padding-inline: 8rem;
   background: white;
 }
 
@@ -267,7 +350,7 @@ header.header-active .navbar a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-inline: 32rem;
+  padding-inline: 16rem;
   background: #fafafa;
 }
 
@@ -570,6 +653,28 @@ textarea:focus {
 }  */
 
 @media (max-width: 769px) {
+
+  .home .container-all .popup{
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    max-height: 60vh;
+  }
+
+  .home .container-all .popup .img{
+    width: 60%;
+    height: 40%;
+  }
+
+  .home .container-all .popup .container-text h1{
+    font-size: 2.5rem;
+  }
+
+  .home .container-all .popup .container-text p{
+    font-size: 1.5rem;
+  }
+
   html {
     font-size: 55%;
   }
