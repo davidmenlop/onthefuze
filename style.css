@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800;300;400;600&display=swap");
 
 :root {
-  --orange: #ff9f1a;
+  --orange:  #ff9f1a;
 }
 
 * {
@@ -278,24 +278,7 @@ header.header-active .navbar a {
   padding-top: 8rem;
   /* background: #1e1e1e; */
 }
-/* 
-.home .row .img {
-  position: relative;
-  flex: 1 1 40rem;
-  padding: 2rem;
-  left: -50vh;
-}
 
-.home .row .image {
-  flex: 1 1 40rem;
-  padding: 2rem;
-}
-
-.home .row .image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-} */
 .home .row .content {
   width: 40%;
   flex: 1 1 30rem;
@@ -489,13 +472,13 @@ header.header-active .navbar a {
   padding: 1rem 2rem;
 }
 
-.plan {
+.social {
   min-height: 100%;
   text-align: center;
   background: #060606;
 }
 
-.plan h1{
+.social h1{
     display: inline-block;
     color: white;
     font-size: 3rem;
@@ -506,7 +489,7 @@ header.header-active .navbar a {
     letter-spacing: 1rem;
 }
 
-.plan h2{
+.social h2{
     display: inline-block;
     color: white;
     font-size: 1rem;
@@ -516,7 +499,7 @@ header.header-active .navbar a {
     text-transform: uppercase;
 }
 
-.plan .box-container {
+.social .box-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -524,58 +507,15 @@ header.header-active .navbar a {
   flex-wrap: wrap;
 }
 
-.plan .box-container .box {
+.social .box-container .box {
   background: rgb(0, 0, 0);
   margin: 2rem;
   width: 10rem;
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.plan .box-container .box:hover {
+.social .box-container .box:hover {
   transform: scale(1.04);
-}
-
-.plan .box-container .box .title {
-  font-size: 2.5rem;
-  background: var(--orange);
-  color: #fff;
-  padding: 1rem 0;
-}
-
-.plan .box-container .box .price {
-  font-size: 4rem;
-  color: #333;
-  padding-top: 1rem;
-}
-
-.plan .box-container .box .price span {
-  font-size: 2rem;
-}
-
-.plan .box-container .box .month {
-  font-size: 2rem;
-  color: #666;
-}
-
-.plan .box-container .box ul {
-  margin: 2rem 8rem;
-  list-style: none;
-}
-
-.plan .box-container .box ul li {
-  text-align: left;
-  padding: 0.5rem 0;
-  font-size: 1.5rem;
-  color: #333;
-}
-
-.plan .box-container .box ul li i {
-  color: var(--orange);
-  padding: 0 0.5rem;
-}
-
-.plan .box-container .box .btn {
-  margin-bottom: 3rem;
 }
 
 .register {
