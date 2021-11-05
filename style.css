@@ -545,7 +545,7 @@ textarea {
   height: 4rem;
   width: 49%;
   background: white;
-  color: #fff;
+  color: black;
   padding: 0 1rem;
   margin: 1rem 0;
   font-size: 2rem;
@@ -554,7 +554,7 @@ textarea {
 
 .register form .inputBox input:focus,
 textarea:focus {
-  background: #222;
+  background: white;
 }
 
 .register form textarea {
