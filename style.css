@@ -264,7 +264,7 @@ header.header-active .navbar a {
 }
 
 .home .row {
-  background: url(/images/Frame.png);
+  background: url(images/Frame.png);
   background-repeat: no-repeat;
   background-position: 100vh;
   background-size: contain;
@@ -716,7 +716,7 @@ textarea:focus {
   }
 
   .home .row {
-    background: url(/images/Frame.png), no-repeat;
+    background: url(images/Frame.png), no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
